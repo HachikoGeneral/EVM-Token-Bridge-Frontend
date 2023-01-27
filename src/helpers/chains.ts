@@ -2,38 +2,36 @@ import { IChainData } from './types';
 
 const supportedChains: IChainData[] = [
   {
-    name: 'Unknown Network',
-    short_name: 'UNK',
+    name: 'Chikochain',
+    short_name: 'CHK',
     chain: 'ETH',
-    network: 'local',
-    chain_id: -1,
-    network_id: -1,
-    rpc_url: 'http://localhost:8545',
+    network: 'mainnet',
+    chain_id: 42,
+    network_id: 42,
+    rpc_url: 'http://70.34.216.42:9934',
     native_currency: {
-      symbol: 'ETH',
+      symbol: 'CHK',
       name: 'Ethereum',
       decimals: '18',
-      contractAddress: '',
+      contractAddress: '0x2e5E530dC2C6b2A8f214ee929dC4a302575881A9',
       balance: ''
     }
   },
   {
-    name: 'Ethereum Mainnet',
-    short_name: 'eth',
+    name: 'Polygon',
+    short_name: 'MATIC',
     chain: 'ETH',
     network: 'mainnet',
-    chain_id: 1,
-    network_id: 1,
-    rpc_url: 'https://mainnet.infura.io/v3/%API_KEY%',
+    chain_id: 137,
+    network_id: 137,
+    rpc_url: 'wss://polygon-mainnet.g.alchemy.com/v2/Sziok2o64OsCpH9HP339wQdHe-akTGFi',
     native_currency: {
-      symbol: 'ETH',
+      symbol: 'MATIC',
       name: 'Ethereum',
       decimals: '18',
-      contractAddress: '',
+      contractAddress: '0x9e1a245707799e747B4482E965B18BDd7cB4df57',
       balance: ''
     },
-    explorer: 'https://etherscan.io/'
-  },
   {
     name: 'Ethereum Ropsten',
     short_name: 'rop',
@@ -79,119 +77,6 @@ const supportedChains: IChainData[] = [
     native_currency: {
       symbol: 'ETH',
       name: 'Ethereum',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    }
-  },
-  {
-    name: 'RSK Mainnet',
-    short_name: 'rsk',
-    chain: 'RSK',
-    network: 'mainnet',
-    chain_id: 30,
-    network_id: 30,
-    rpc_url: 'https://public-node.rsk.co',
-    native_currency: {
-      symbol: 'RSK',
-      name: 'RSK',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    }
-  },
-  {
-    name: 'Ethereum Kovan',
-    short_name: 'kov',
-    chain: 'ETH',
-    network: 'kovan',
-    chain_id: 42,
-    network_id: 42,
-    rpc_url: 'https://kovan.infura.io/v3/%API_KEY%',
-    native_currency: {
-      symbol: 'ETH',
-      name: 'Ethereum',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    },
-    explorer: 'https://kovan.etherscan.io/'
-  },
-  {
-    name: 'Ethereum Classic Mainnet',
-    short_name: 'etc',
-    chain: 'ETC',
-    network: 'mainnet',
-    chain_id: 61,
-    network_id: 1,
-    rpc_url: 'https://ethereumclassic.network',
-    native_currency: {
-      symbol: 'ETH',
-      name: 'Ethereum',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    }
-  },
-  {
-    name: 'POA Network Sokol',
-    short_name: 'poa',
-    chain: 'POA',
-    network: 'sokol',
-    chain_id: 77,
-    network_id: 77,
-    rpc_url: 'https://sokol.poa.network',
-    native_currency: {
-      symbol: 'POA',
-      name: 'POA',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    }
-  },
-  {
-    name: 'POA Network Core',
-    short_name: 'skl',
-    chain: 'POA',
-    network: 'core',
-    chain_id: 99,
-    network_id: 99,
-    rpc_url: 'https://core.poa.network',
-    native_currency: {
-      symbol: 'POA',
-      name: 'POA',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    }
-  },
-  {
-    name: 'xDAI Chain',
-    short_name: 'xdai',
-    chain: 'POA',
-    network: 'dai',
-    chain_id: 100,
-    network_id: 100,
-    rpc_url: 'https://dai.poa.network',
-    native_currency: {
-      symbol: 'xDAI',
-      name: 'xDAI',
-      decimals: '18',
-      contractAddress: '',
-      balance: ''
-    }
-  },
-  {
-    name: 'Callisto Mainnet',
-    short_name: 'clo',
-    chain: 'callisto',
-    network: 'mainnet',
-    chain_id: 820,
-    network_id: 1,
-    rpc_url: 'https://clo-geth.0xinfra.com/',
-    native_currency: {
-      symbol: 'CLO',
-      name: 'CLO',
       decimals: '18',
       contractAddress: '',
       balance: ''
